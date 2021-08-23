@@ -856,9 +856,9 @@ func TestInt64Mod(t *testing.T) {
 }
 
 func TestFloat64Mod(t *testing.T) {
-	var modInt = &calcTestSuit{float64(1.5), int(3), opMod, true, nil}
-	var modInt64 = &calcTestSuit{float64(1.5), int64(3), opMod, true, nil}
-	var modFloat64 = &calcTestSuit{float64(2.5), float64(0.5), opMod, true, nil}
+	var modInt = &calcTestSuit{float64(1.5), int(3), opMod, false, int64(1)}
+	var modInt64 = &calcTestSuit{float64(1.5), int64(3), opMod, false, int64(1)}
+	var modFloat64 = &calcTestSuit{float64(2.5), float64(3.5), opMod, false, int64(2)}
 	var modString = &calcTestSuit{float64(0.5), "test", opMod, true, nil}
 	var modBool = &calcTestSuit{float64(1), true, opMod, true, nil}
 	var modNil = &calcTestSuit{float64(1), nil, opMod, true, nil}

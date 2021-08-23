@@ -1,4 +1,7 @@
-#Atropos
+# Atropos
+
+[![codecov](https://codecov.io/gh/liguangbo/atropos/branch/master/graph/badge.svg?token=D82LBK69FJ)](https://codecov.io/gh/liguangbo/atropos)
+
 Atropos is a DSL for edit JSON struct.
 
 # Design
@@ -74,11 +77,14 @@ return
 ```
 
 ## Function
+```
 a.count()
 a.avg()
 a.max()
 a.min()
 a.sum()
+```
+
 # More
 
 read and run in example_test.go for more examples
